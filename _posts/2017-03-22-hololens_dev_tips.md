@@ -8,6 +8,39 @@ This is a HoloLens development documentation for the project.
 
 ---
 
+## [Getting started with HoloToolkit](https://forums.hololens.com/discussion/2364/getting-started-with-holotoolkit)
+Here are the steps that you currently need to take to run sample projects in HoloToolkit-Unity:
+1. Clone the HoloToolkit-Unity project from GitHub to your PC.
+2. Launch Unity and select 'Open'
+3. Select the 'HoloToolkit-Unity' folder on your PC to open the project in Unity
+4. In the Project panel, expand the HoloToolkit folder
+5. Locate the feature that you are interested in (we'll use SpatialMapping as an example)
+6. Expand SpatialMapping feature and then select the 'Tests' folder.
+7. Double-click on one of the test scenes to open it (I would suggest trying the 'SpatialProcessing' scene, since it can run inside of Unity).
+8. Some scenes (like 'SpatialProcessing') can run inside of Unity, so you just need to press the 'Play' button. All scenes will run on the HoloLens, but you need to follow the build/deploy process outlined in our docs and Academy courses.
+9. If you're confused about what a test does, locate the ReadMe file associated with the feature (view it on GitHub for nice formatting, or find and double-click it under the feature-level folder in Unity). There should be instructions/explanations for each test scene.
+
+If you want to try more end-to-end samples, then there are several available under the 'HoloToolkit-Examples' folder. To run the SpatialMappingComponent example, you would do the following:
+1. Expand the 'HoloToolkit-Examples' folder.
+2. Click on the 'SpatialMappingComponent' folder.
+3. Double-click on the 'Example' scene to load it.
+4. This sample must run on the HoloLens, so build/deploy as usual (In the Build Settings window, don't forget to press the 'AddOpenScenes' button to add the current scene to the build and delete any scene from the list that you may have added before).
+5. There should be a ReadMe file associated with each example to help explain what is going on.
+
+If you get to the point where you want to import HoloToolkit into your own Unity project, then you can do the following:
+1. In the HoloToolkit-Unity project, right-click on the 'HoloToolkit' folder and select 'Export package'.
+2. Wait a few seconds for the export dialog to populate...
+3. You can create a custom package by unchecking any folders/scripts that you do not want to export. For example, if you don't need any of the 'Build' 'Cross Platform' 'Sharing' and 'Spatial Sound' components, then uncheck those folders. It's a good idea to uncheck all of the 'test' folders under each feature too, and make sure that the 'HoloToolkit-Examples' folder is not included so you don't get test scenes added to your project.
+4. Press the 'Export' button.
+5. Save the .unitypackage
+6. Open your personal project in Unity or create a new project.
+7. Select the 'Assets' file menu option at the top of Unity
+8. Select 'Import Package' > 'Custom Package' and then find and select the .unitypackage that you saved in step 5 above. Press the 'Open' button.
+9. If there are any files that you don't want to import into your project, you can uncheck them now, otherwise, press the 'Import' button.
+10. The 'HoloToolkit' folder should now appear under the 'Assets' folder in the Project panel.
+
+
+
 ## Unity settings for HoloLens
 ### 1. Player settings
 1. From the Build Settings... window, open Player Settings...
