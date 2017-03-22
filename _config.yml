@@ -1,6 +1,6 @@
 # Setup
-name:         Holoscanner
-tagline:      Gamifying 3D Scanning
+name:         Aalto x HoloLens
+tagline:      3D scanning/reconstruction with Hololens, Google Tango and etc.
 baseurl:      ""
 
 markdown: kramdown
