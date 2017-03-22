@@ -1,10 +1,16 @@
 # Installation
 
-```
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+```Bash
+xcode-select --install    # Mac only
+
 curl -sSL https://get.rvm.io | bash -s stable
+
 rvm install 2.3
 rvm use 2.3
 gem install bundle
-bundle install jekyll
+gem install jekyll
+gem install nokogiri
+
+bundle install
+jekyll serve
 ```
