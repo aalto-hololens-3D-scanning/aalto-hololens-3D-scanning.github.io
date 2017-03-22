@@ -92,6 +92,9 @@ Users wearing HoloLens will always accommodate to 2.0m to maintain a clear image
 * There’s no big impact using StandardFast (HoloToolkit) over the standard PBS shader provided by Unity
 * Mirroring HoloLens screen decreases the performance.
 
+## Memory Issue
+[Holoscanner](https://holoscanner.github.io/2016/05/12/week-6.html) manually calls garbage collector to avoid crash.
+
 ## Hololens Opensource code
 * [Holotoolkit](https://github.com/Microsoft/HoloToolkit)
 * [HoloToolkit-Unity](https://github.com/Microsoft/HoloToolkit-Unity)
