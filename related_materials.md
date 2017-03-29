@@ -4,6 +4,7 @@ title: Related Materials
 ---
 
 ## Papers
+- [KinectFusion](https://www.microsoft.com/en-us/research/project/kinectfusion-project-page/)
 
 ## Projects
 
