@@ -3,6 +3,11 @@ layout: default
 title: About HoloLens
 ---
 
+## Documentations
+* [All pages](https://developer.microsoft.com/en-us/windows/mixed-reality/category/all_pages)
+* [Windows Dev Center](https://developer.microsoft.com/en-us/windows/mixed-reality/)
+* [Installations](https://developer.microsoft.com/en-us/windows/mixed-reality/install_the_tools)
+
 ## [Specs](http://www.pcworld.com/article/3039822/consumer-electronics/we-found-7-critical-hololens-details-that-microsoft-hid-inside-its-developer-docs.html)
 * HPU 1.0 + 1GB RAM
 * 32-bit Intel chip + 2GB RAM
@@ -100,7 +105,11 @@ Users wearing HoloLens will always accommodate to 2.0m to maintain a clear image
 * [HoloToolkit-Unity](https://github.com/Microsoft/HoloToolkit-Unity)
 * [HolographicAcademy](https://github.com/Microsoft/HolographicAcademy)
 * [HoloLensCompanionKit](https://github.com/Microsoft/HoloLensCompanionKit)
-* []()
+* [HoloToolkit](https://github.com/Microsoft/HoloToolkit)
+* [HoloToolkit-Unity](https://github.com/Microsoft/HoloToolkit-Unity)
+* [WindowsDevicePortalWrapper](https://github.com/Microsoft/WindowsDevicePortalWrapper/)
+* [GalaxyExplorer](https://github.com/Microsoft/GalaxyExplorer/)
+* [HolographicAcademy](https://github.com/Microsoft/HolographicAcademy)
 * []()
 * []()
 
