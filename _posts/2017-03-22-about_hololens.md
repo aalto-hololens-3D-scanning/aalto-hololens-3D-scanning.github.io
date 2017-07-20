@@ -7,6 +7,7 @@ title: About HoloLens
 * [All pages](https://developer.microsoft.com/en-us/windows/mixed-reality/category/all_pages)
 * [Windows Dev Center](https://developer.microsoft.com/en-us/windows/mixed-reality/)
 * [Installations](https://developer.microsoft.com/en-us/windows/mixed-reality/install_the_tools)
+* [Unity 5.5.2f1 install](https://unity3d.com/get-unity/download/archive)
 
 ## [Specs](http://www.pcworld.com/article/3039822/consumer-electronics/we-found-7-critical-hololens-details-that-microsoft-hid-inside-its-developer-docs.html)
 * HPU 1.0 + 1GB RAM
