@@ -261,3 +261,38 @@ I checked out all the commits in my git history and apparently it has been corru
 
 #### 17:00 Wait it's not a corruption!
 According to an [Uniti Forum](https://forum.unity3d.com/threads/typelessdata-in-asset-file.277441/), that weird long data represent [Special array for large byte arrays](https://github.com/ata4/disunity/wiki/Serialized-file-format). [Check your asset serialization mode](https://docs.unity3d.com/Manual/class-EditorManager.html).
+
+
+### July 28th 
+
+**Problem**: depth image doesn't seem to represent the actual image well.
+
+**Why?**
+1. Spatial Mapping module is not doing its job.
+2. Depth image generation is computationally intensive. Map and Capture in series not simultaneously.
+
+#### 19:45 [Allow Surface update by the system](https://github.com/jonathangranskog/HoloLensDepthPass/commit/2072f1a8e90827539e93ba9f78a4608753a76cf5)
+It turns out that SpatialMapping module I was using was not a clean version from MS but a hacky version I used for another project.
+**Result**: Updates surface by the system.
+**Problem**: The depth image doesn't match meshes. They seem to have lost an anchor.
+**Try**: Add pause command that pauses spatial mapping observer and depth image generator.
+
+#### 20:45 [Add pause/resume command for mapping & capturing](https://github.com/jonathangranskog/HoloLensDepthPass/commit/ca2f873af5aaa28f93c81662af899e6efb6844f9)
+**Result**: The depth image clearly doesn't match meshes.
+**Problem**: I have no idea why this is happening...
+**Try**: Capture only on voice command.
+
+#### 21:45 [Capture buffer&image on voice command](https://github.com/jonathangranskog/HoloLensDepthPass/commit/e936cad11a4f65a11d9e1ceccaba824d4657600e)
+**Result**: The depth image clearly doesn't match meshes. I get images both buffer and RGB. The z-buffer camera seems to move in a funny way. See images at https://drive.google.com/drive/folders/0B0Fa41V9uAI3R2g5d2lBUjhqSzg?usp=sharing
+**Problem**: I have no idea why this is happening...
+**Try**: ??
+
+
+
+
+
+
+
+
+
+
