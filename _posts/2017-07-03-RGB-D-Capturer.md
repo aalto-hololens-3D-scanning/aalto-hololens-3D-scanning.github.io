@@ -14,7 +14,7 @@ I've been working on this since July 1st. There has been many problems:
 * shader
 * Unity
 
-##
+## Logs
 
 ### July 19th Wed.
 #### 11:12 Update SpatialMapping from [Microsoft repo](https://github.com/Microsoft/HoloToolkit-Unity/commit/9ede36646cd5953485b1bc38bc1afc91f30c506c).
@@ -190,7 +190,7 @@ The requested operation cannot be performed on a file with a user-mapped section
 They were horrible because it was impossible to reason the errors. Deleting `.sln` file solved the issues.
 
 
-#### 16:33 Memory leak
+#### 16:33 Unity asset corruption.
 
 Commit: 8d8f0b7b97e4ad0d07255c6b1d57704f4c04d366
 ```
@@ -259,5 +259,5 @@ Texture2D:
 ```
 I checked out all the commits in my git history and apparently it has been corrupted since the beginning. 
 
-#### 17:00 Wait it's not a memory leak!
+#### 17:00 Wait it's not a corruption!
 According to an [Uniti Forum](https://forum.unity3d.com/threads/typelessdata-in-asset-file.277441/), that weird long data represent [Special array for large byte arrays](https://github.com/ata4/disunity/wiki/Serialized-file-format). [Check your asset serialization mode](https://docs.unity3d.com/Manual/class-EditorManager.html).
